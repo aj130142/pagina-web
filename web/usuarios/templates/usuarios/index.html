@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Médica La eterna primavera</title>
+    
+    
+</head>
+<body>
+    <header>
+        <div id="your-class">
+            ETERNA PRIMAVERA
+        </div>
+        <nav>
+            <ul>
+                {% if user.is_authenticated %}
+                <li><a href= "{% url 'gestion' %}">Gestion</a></li>
+                <U>
+                <a href="{% url 'logout' %}">cerrar sesión</a>
+                </li>
+                {% else %}
+                <UL>
+                <a href="{% url 'login' %}">Iniciar sesión</a>
+                </li>
+            
+                {% endif %}
+                <li><a href="{% url 'servi' %}">SERVICIOS</a></li>
+                <li><a href="{% url 'nosotro' %}">NOSOTROS</a></li>
+                <li><a href="{% url 'contactar' %}">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <section id="banner">
+            <div id="banner-text">
+                <h1>PROTEGIENDO TU SALUD DESDE 2012</h1>
+            </div>
+            <button  class="boton" id="scroll"><i class="fas fa-arrow-down"></i></button>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer id="informaciongeneral">
+        <div id="footer-content">
+            <div id="Historia">
+                <h2>NUESTRA HISTORIA</h2>
+                <p>Desde su fundación en 2012, la Clínica SaludVida ha estado a la vanguardia de la medicina moderna. 
+                    Nuestra misión siempre ha sido proporcionar atención de calidad y accesible para todos. 
+                    A lo largo de los años, hemos crecido y expandido nuestros servicios, pero siempre manteniendo el 
+                    corazón y la dedicación de nuestros fundadores.</p>
+                    <br>
+                    <p>
+                        Desde sus comienzos, Eterna Primavera se ha destacado por su enfoque holístico hacia el bienestar. La clínica no solo invirtió en la tecnología más avanzada para diagnósticos y tratamientos, sino que también creó un ambiente que promueve la tranquilidad y la esperanza, elementos esenciales en cualquier proceso de curación. Con jardines que florecen todo el año y salas de espera que más bien parecen salones de estar acogedores, la clínica es un oasis en la rutina a menudo agitada de la vida moderna.
+                    </p>
+                    <br>
+                    <p>
+                        El equipo de Eterna Primavera está compuesto por profesionales de la salud galardonados, cuya empatía y compromiso van más allá de sus impecables credenciales. Cada médico, enfermera y técnico comparte un compromiso común: tratar a cada paciente como a un miembro de su propia familia, con un cuidado meticuloso y un trato cálido y humano.
+                    </p>
+                    <br>
+                    <p>
+                        A lo largo de los años, la clínica ha crecido, añadiendo especialidades y expandiendo sus servicios, pero el núcleo de su filosofía permanece inalterado: una atención médica que perpetúa la salud y el bienestar como una primavera que nunca cede al invierno. Con cada paciente que pasa por sus puertas, la Clínica Eterna Primavera reafirma su voto de ser un lugar donde la vida se celebra y se cuida en todas sus fases, siempre con esperanza y la más alta calidad de atención médica.
+                    </p>
+            </div>
+            <div id="imagenes">
+                <div class="description">Nuestro personal durante la lucha del COVID-19</div>
+                <br>
+                <div class="description">Equipo avanzado y personal calificado</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+<style>
+    body {
+        background-color: #ffffff; /* Fondo blanco */
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif; /* Fuente para el texto */
+    }
+
+    header {
+        background-color: #61bb32;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%230e971a' fill-opacity='0.4' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");
+        color: back; /* Texto en blanco */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 23px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    main {
+        background-color: #ffffff; /* Fondo blanco */
+    }
+
+    #banner {
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMTI4MC4wMDAwMDBwdCIgaGVpZ2h0PSIxMTAzLjAwMDAwMHB0IiB2aWV3Qm94PSIwIDAgMTI4MC4wMDAwMDAgMTEwMy4wMDAwMDAiCiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij4KPG1ldGFkYXRhPgpDcmVhdGVkIGJ5IHBvdHJhY2UgMS4xNSwgd3JpdHRlbiBieSBQZXRlciBTZWxpbmdlciAyMDAxLTIwMTcKPC9tZXRhZGF0YT4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsMTEwMy4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiCmZpbGw9IiM0Y2FmNTAiIHN0cm9rZT0ibm9uZSI+CjxwYXRoIGQ9Ik02MTkyIDExMDExIGMtMjMwIC02MyAtNDMzIC0yNTIgLTUwNiAtNDczIC0xNSAtNDIgLTI5IC0xMTAgLTMyCi0xNTAgLTEzIC0xNDggMzMgLTM0MyAxMTIgLTQ3NSA0NiAtNzUgNzYgLTEwNyAxNDcgLTE1MSBsNTggLTM2IC0yIC0xMjUgYzAKLTY5IDIgLTI1NSA2IC00MTMgNyAtMjU5IDYgLTI4OCAtOCAtMjg4IC05IDAgLTUxIDEzIC05NCAyOSAtMzA5IDExNSAtNDk1CjI2MiAtNTYyIDQ0NCAtMjQgNjUgLTI4IDE1MiAtMjIgNDI3IDQgMTQ2IDEgMTc0IC0xOCAyNDQgLTQ0IDE1OCAtMTU1IDMzMwotMjk3IDQ2NSAtODUgNzkgLTIzNCAxOTQgLTMyMiAyNDggLTU3IDM1IC01OCAzNSAtMTQ3IDI5IC0xNjAgLTkgLTMyMyAtNjkKLTU1NSAtMjAzIC0xMzEgLTc2IC00MjMgLTIyMiAtNjIzIC0zMTIgLTUxNyAtMjM0IC0xMDYyIC0zOTUgLTE1OTIgLTQ3MiAtMzMwCi00OCAtNTI2IC01OSAtMTAxNyAtNTkgLTQ3MSAwIC01MjYgLTUgLTYzNSAtNTQgLTEwOCAtNTAgLTEwOSAtMTExIC01IC0yMTUKMTA2IC0xMDUgMTkwIC0xNTQgNTEyIC0yOTkgMjAyIC05MSA0MTcgLTE2MiA0ODcgLTE2MiAxMyAwIDIzIC0yIDIzIC00IDAgLTIKLTExIC0yOCAtMjUgLTU4IC0zMCAtNjUgLTMxIC05OSAtNCAtMTU2IDYwIC0xMjQgMzE3IC0yMTcgNzIxIC0yNjMgbDEwNiAtMTIKLTEwIC0yOSBjLTM2IC0xMDMgOTEgLTIxMyAzMjcgLTI4NSA4NCAtMjUgMTAzIC0yNyAyNzUgLTI3IDE0NCAtMSAyMDEgMyAyNTcKMTcgOTQgMjIgOTMgMjIgOTMgLTE2IDAgLTgxIDgyIC0xODIgMTg0IC0yMjcgMTExIC01MCAzMDEgLTY0IDQ1MyAtMzUgNDMgOAo3OSAxNSA4MSAxNSAxIDAgMiAtMTQgMiAtMzAgMCAtMTI3IDE5MiAtMTk0IDYxNiAtMjE2IGwxMzEgLTYgLTgwIC03NyBjLTE3NAotMTY2IC0yNTcgLTMzNCAtMjU5IC01MjUgLTQgLTMwOSAxOTggLTUzMSA2NTYgLTcyMSA5MyAtMzkgMzE3IC0xMDUgMzUzIC0xMDUKMzIgMCAyOSAtMTEgLTEyIC0zOSAtNzIgLTQ5IC0xOTIgLTE5NSAtMjQyIC0yOTYgLTM1IC02OSAtNjMgLTE2MyAtNzcgLTI1NgpsLTEzIC05MSAzOSAtMTE2IGM0MSAtMTIzIDg0IC0yMTUgMTI2IC0yNzIgMTA0IC0xNDAgMjM5IC0yNjAgNDEyIC0zNjYgOTUKLTU3IDI0OCAtMTM0IDI2OSAtMTM0IDIzIDAgOSAtMTggLTQ0IC01NSAtMTg4IC0xMjkgLTI4NSAtMzQzIC0yNzIgLTU5OSA4Ci0xNjYgNTIgLTI3OCAxNTcgLTQwNiA2NCAtNzcgMTI3IC0xMjIgNDA5IC0yOTYgbDIzOSAtMTQ4IC01NyAtNjQgYy05MSAtMTAwCi0yMTAgLTMxMiAtMjMwIC00MTAgLTYgLTI5IC0xMSAtMTE1IC0xMSAtMTkwIDAgLTE1MyAxNCAtMjI1IDU3IC0zMDAgMjYgLTQ1CjE2MyAtMTkwIDIzMSAtMjQ1IGwzMyAtMjcgLTQzIC01MCBjLTU5IC02OSAtMTEyIC0xNTggLTE1MCAtMjU0IC00MSAtMTA2IC00NQotMjI5IC0xMCAtMzE3IDMxIC03OCA4OCAtMTY4IDE0OCAtMjM3IGw1MiAtNTggLTE4IC0zNyBjLTg2IC0xNzUgLTgwIC0zMTEgMTkKLTQ2NCAzMyAtNTIgNDkgLTY1IDExNSAtOTkgbDc2IC0zOSAwIC0xNjYgYzAgLTEyNCAzIC0xNzAgMTQgLTE4NCAxNSAtMjEgODUKLTMzIDIwMSAtMzQgMTA0IC0xIDExNSA5IDExNSAxMTAgbDAgNzkgMzUgMCBjNzQgMCAxNDkgNTEgMTg0IDEyNSAzOCA4MSAyMwoyMTAgLTM1IDI5NiBsLTMzIDUwIDQyIDYyIGMzNyA1NCA0MiA2OSA0NSAxMzAgMyAzNyAtMSA4OCAtOCAxMTMgLTE0IDQ5IC04MwoxMzMgLTE0NCAxNzUgbC0zNSAyMyA4NyA0MyBjNDggMjMgMTIwIDY4IDE1OSAxMDEgMTI4IDEwNSAxOTIgMjAwIDIwMCAyOTcgMgoyOCAxMSA3NCAyMCAxMDQgMjQgODIgMTQgMTUwIC00MCAyNTcgLTI1IDUwIC02MSAxMTEgLTgwIDEzNiBsLTM1IDQ2IDIwIDI4CmMzMCA0NSA4NyAxNjAgMTAyIDIwNiAzNiAxMTIgNDEgMTQ4IDQxIDI3OCAtMSAxMTMgLTUgMTQ3IC0yNCAyMTAgLTMwIDk2IC02OAoxNzAgLTEyNCAyNDUgbC00NSA1OSAyNyAxNiBjMTQgOSA5NiA1NCAxODEgOTkgMTgyIDk4IDI2MyAxNTAgMzQ2IDIyNSAxMTIKMTAxIDIxNyAyODggMjU1IDQ1NCAxMCA0MSAxMCA2NyAwIDExOSAtNDIgMjI3IC0xNzggNDQ0IC0zNDkgNTU4IC0yMyAxNSAtNDIKMjkgLTQyIDMwIDAgMiA0NSAyMiA5OSA0NSAzMzIgMTQwIDU5NiAzNjkgNzE2IDYyMiA0NCA5MiA3NSAyMTQgNzUgMjkwIDAgMTYzCi0xMDggNDIzIC0yMzIgNTU0IGwtNDcgNTAgNzIgMTkgYzQyMCAxMDcgNzg0IDM1NCA4NjEgNTg1IDI0IDczIDMyIDIyMyAxNgozMDMgLTM1IDE3OCAtMTEyIDMyNyAtMjM0IDQ1NSAtNTMgNTUgLTU3IDYyIC0zNSA2MiA3OSAwIDM2NSAyNCA0MjEgMzUgODcgMTgKMjA4IDc0IDIzNyAxMTEgMTggMjMgMjIgMzggMTggNzIgLTQgMzcgLTIgNDIgMTIgMzcgMTU0IC02MSAyOTcgLTcxIDQwNiAtMzAKMjA3IDc4IDMyNCAxNzggMzI1IDI3OCAwIDMwIDYgMzEgNjUgMTcgMjIgLTUgOTIgLTE0IDE1NiAtMjAgMjkxIC0yNiA1ODggNTIKNjkzIDE4MyAyNyAzNCAzMSA0NyAzMSA5OCAtMSA1MyAxIDU5IDIwIDU5IDU1IDEgMzEwIDMxIDM3NyA0NSAxNzggMzcgMjc4IDg0CjM1NyAxNzEgNzMgODAgODggMTYyIDQ2IDI0NCAtMTQgMjggLTE0IDI4IDIxIDM1IDYzIDExIDM1NSAxMDMgNDc2IDE0OSAzMTQKMTE5IDU4OCAzMTggNTg4IDQyNiAwIDU1IC01MSA5NiAtMTU3IDEyNyAtNTEgMTUgLTExNSAxNyAtNTEzIDE4IC0zNTggMCAtNDkxCjQgLTYyNSAxOCAtOTMgMTAgLTIxMyAyMiAtMjY1IDI3IC01NDkgNTYgLTg5NiAxMzYgLTEzMDAgMjk4IC0zNDggMTQwIC04NTUKMzc3IC0xMjQwIDU4MCAtNjMgMzMgLTE1NSA3NSAtMjA1IDkzIC03OSAyOCAtMTAzIDMyIC0xOTUgMzMgbC0xMDUgMSAtNzAgLTQyCmMtMTIwIC03MSAtMzk4IC0zMjUgLTQ2NyAtNDI3IC01NCAtNzggLTk5IC0xNzggLTEzOSAtMzA2IC0zOCAtMTIxIC00MiAtMjA0Ci0yMCAtMzY1IDcgLTU1IDEyIC0xMzEgOSAtMTcwIC0xMiAtMjEzIC0yMzEgLTQyNyAtNTM4IC01MjkgLTkzIC0zMCAtMjAxIC01OAotMjA2IC01MyAtNSA1IDE1IDczNyAyMiA4MDIgNSA0NyA5IDUzIDY1IDk4IDEwMSA4MSAxNzcgMTk3IDIyMCAzMzcgMjcgOTAgMzIKMjY4IDEwIDM2NSAtMjUgMTA5IC05NCAyMzggLTE3MiAzMjAgLTE0NiAxNTMgLTMwMiAyMjIgLTUyNCAyMzEgLTk5IDMgLTEzMyAxCi0xOTMgLTE1eiBtLTE5MSAtMzM0OSBjOCAtNyAzNSAtMTA4OSAyOCAtMTA5NiAtMTEgLTkgLTI4NyAyNyAtNjM5IDg0IC02OSAxMQotMjAxIDI5IC0yOTQgNDAgLTI0NSAzMCAtMzQ3IDcxIC00NTMgMTgzIC04MCA4NSAtMTEzIDE2NyAtMTEzIDI4NSAwIDExOSA1OQoxODYgMTk5IDIyOCA4NiAyNSAyMTUgMzQgNDg2IDM0IDIyOCAwIDI4MyAzIDM1NiAxOSAyMTIgNDcgMzEzIDEyNSAyNzkgMjE2CmwtMTEgMjggNzggLTcgYzQyIC0zIDgwIC05IDg0IC0xNHogbTk1MSAtNTIgYy0zIC0yOCAyIC00OSAxNyAtNzQgNjUgLTEwNQoyNDMgLTEzOCA3MTYgLTEzNSAyMzMgMiAyOTAgLTEgMzM4IC0xNCA4NCAtMjQgMTQ4IC02MCAxODkgLTEwNSA0OCAtNTMgNjEKLTk4IDU2IC0xOTEgLTggLTEyNiAtNjggLTIyMCAtMTk3IC0zMDUgLTEyMCAtNzkgLTIzNCAtMTE0IC00NDYgLTEzNSAtMjAyCi0yMSAtMjk5IC0zMyAtNDM1IC01MSAtNzQgLTEwIC0xODkgLTIzIC0yNTUgLTMwIC02NiAtNiAtMTQ5IC0xNSAtMTg0IC0xOQpsLTY0IC04IDYgMTU2IGM0IDg2IDEyIDMyNyAxOCA1MzYgNiAyMDkgMTQgMzgzIDE4IDM4OCA5IDkgMTEwIDI0IDE3NiAyNiBsNTEKMSAtNCAtNDB6IG0tMTE2IC0xNTIwIGMzMzYgLTU5IDU3MiAtMTQ1IDY1NyAtMjM5IDQ3IC01MiA2MCAtOTggNTUgLTE5MSAtNgotMTAyIC00NCAtMTg0IC0xMjkgLTI3NSAtMTY4IC0xODAgLTQwMiAtMzA5IC02NjggLTM3MCAtMzYgLTkgLTc1IC0xOCAtODUKLTIxIC0xOSAtNiAtMTkgMSAtMTMgMjkyIDEzIDU5MSAxOCA3NjAgMjMgNzkyIDYgMzkgNyAzOSAxNjAgMTJ6IG0tNzg2IC0zMTAKYzAgLTEyNCA1IC0zMzUgMTAgLTQ3MCA1IC0xMzUgNyAtMjQ2IDUgLTI0OCAtMiAtMyAtMTYgNSAtMzIgMTYgLTE1IDEwIC0xOTcKMTI0IC00MDMgMjUxIC0yMDYgMTI4IC0zODMgMjQyIC0zOTIgMjUzIC0zNyA0MyAtMTEgMTU5IDUyIDIzMSAxMDEgMTE0IDMwNwoyMDEgNTc1IDI0MSAxNzIgMjYgMTY5IDI3IDE3NyAtMTQgNCAtMTkgNyAtMTM2IDggLTI2MHogbTM5IC0xNTQyIGMxIC03OSA0Ci0yNDEgNyAtMzYwIDYgLTE2OSA0IC0yMTggLTUgLTIxOCAtNyAwIC01NyA0NCAtMTExIDk4IC05NiA5NSAtMTc2IDIwNCAtMTk4CjI3MSAtNDIgMTIzIDI5IDIyOCAyMTYgMzIyIDkzIDQ2IDkwIDUwIDkxIC0xMTN6IG03NDYgLTE3IGMxNjUgLTEwMyAxOTAgLTEyMgoxOTAgLTE0NCAwIC0zMyAtMzQyIC00NjAgLTM4NyAtNDgzIGwtMzEgLTE2IDcgMjM4IGM0IDEzMCAxMiAyNTkgMTcgMjg1IDYgMjYKOSA5MSA3IDE0MyAtMiA1MyAtMSA5NiAyIDk1IDMgMCA5MSAtNTMgMTk1IC0xMTh6Ii8+CjwvZz4KPC9zdmc+Cg=="); /* Cambia por la ruta de tu imagen de fondo */
+        background-size: contain;
+        background-position: center;
+        background-repeat: repeat;
+        text-align: center;
+        color: black; /* Texto en verde */
+        padding: 100px 0;
+    }
+
+    #banner h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    #scroll {
+        background-color: #00cc66;
+        color: #ffffff;
+        font-size: 16px;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    footer {
+        background-color: #61bb32; /* Fondo verde */
+        color: #ffffff; /* Texto en blanco */
+        padding: 2em;
+    }
+
+    #footer-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    #Historia {
+        width: 60%;
+        font-size: 25px;
+    }
+
+    #Historia h2 {
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding: 10px 0;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    #imagenes {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .boton {
+        padding: 10px 20px;
+        background-color: #007bff; /* Cambia el color de fondo a tu preferencia */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      
+      .boton i {
+        margin-left: 5px; /* Espacio entre el texto y la flecha */
+      }
+</style>
+<script>
+    document.getElementById('scroll').addEventListener('click', function() {
+        document.getElementById('informaciongeneral').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>

@@ -1,0 +1,39 @@
+/* Estilos para el formulario */
+.formulario {
+    width: 500px; /* Ancho del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espacio alrededor del formulario */
+    background-color: #f0f0f0; /* Color de fondo del formulario */
+    border: 1px solid #ccc; /* Borde del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px #888888; /* Sombra del formulario */
+  }
+  
+  /* Estilos para los campos de entrada */
+  .formulario input {
+    width: 100%; /* Los campos de entrada ocupan todo el ancho del formulario */
+    padding: 10px; /* Espacio interior dentro de los campos de entrada */
+    margin: 5px 0; /* Espacio alrededor de los campos */
+    border: 1px solid #ccc; /* Borde de los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  /* Estilos para la etiqueta del campo */
+  .formulario label {
+    font-weight: bold; /* Texto en negritas */
+  }
+  
+  /* Estilos para el botón de envío */
+  .formulario input[type="submit"] {
+    background-color: #0074d9; /* Color de fondo del botón */
+    color: #fff; /* Color del texto en el botón */
+    padding: 10px 20px; /* Espacio interior del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  .formulario input[type="submit"]:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor por encima */
+  }
+  

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regristo de Pacientes</title>
+
+</head>
+<body>
+
+        <form action="" class="formulario"  method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          
+          {{  formu  }}
+            <br>
+            <button type="submit">enviar </button>
+
+        </form>
+        {{mensaje}}
+    
+    
+
+    
+</body>
+
+</html>
+
+<style>
+  /* Estilos generales */
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #e4f9e0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+  }
+  
+  .container {
+      max-width: 500px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el formulario */
+  .formulario {
+      text-align: center;
+  }
+  
+  .formulario input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+  
+  .formulario label {
+      font-weight: bold;
+      display: block;
+  }
+  
+  /* Estilos para el botón de envío */
+  .formulario button {
+      background-color: #0074d9;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s;
+  }
+  
+  .formulario button:hover {
+      background-color: #0056b3;
+  }
+  
+  /* Estilos para el mensaje */
+  .mensaje {
+      text-align: center;
+      margin-top: 20px;
+      color: #0074d9;
+      font-size: 18px;
+  }
+  
+  
+    </style>

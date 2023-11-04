@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Servicios Eterna Primavera</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: initial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+  }
+  header {
+    display: flex;
+    align-items: center; /* Alinea los elementos hijos verticalmente */
+    justify-content: space-between; /* Distribuye el espacio horizontalmente */
+    background-color: #3e6c41; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: #3498db 4px solid;
+    padding: 20px;
+    
+
+  }
+
+
+  header .highlight, header .actual a {
+    color: #4eb7fd;
+    font-weight: bold;
+  }
+  header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  header .highlight, header .enlaces a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  header a:hover{
+    color: #4eb7fd;
+  }
+
+  
+  #logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 20px; /* Margen a la izquierda del logotipo */
+    /* Asegúrate de que la clase logo tenga la misma altura o línea de altura que los elementos del menú */
+    line-height: 70px; /* Altura de la línea para centrar verticalmente el texto del logotipo */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    padding: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 70px; /* Altura de la línea para centrar verticalmente los enlaces */
+  }
+  
+  .titulo {
+    padding: 20px 0 40px 0;
+    margin: 20px 0;
+    background: #6ab04c;  /* verde */
+    border-bottom: #3498db 4px solid;
+    border-top: #3498db 4px solid;
+
+  }
+  .titulo h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+  }
+  .titulo p{
+
+    font-size: 22px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+  .servicios{
+    font-size: 20px;
+    margin-left: 20px;
+    border-bottom: #3498db 4px solid;
+
+  }
+
+  .servicios h3{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .ubicaciones{
+    font-size: 20px;
+    margin-left: 20px;
+    border-bottom: #3498db 4px solid;
+  }
+
+  .ubicaciones h4{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  footer {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #4CAF50;
+    text-align: center;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="imagenes/logo.png" height="30" width="30"  alt="Logotipo de La eterna primavera">
+        ETERNA PRIMAVERA 
+    </div>
+    <nav>
+        <ul>
+
+          <li><a href="{% url 'incicio' %}">INICIO</a></li>
+          <li class="actual"><a href="{% url 'servi' %}">SERVICIOS</a></li>
+              <li><a href="{% url 'nosotro' %}">NOSOTROS</a></li>
+              <li><a href="{% url 'contactar' %}">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+
+  
+  <div class="titulo">
+    <div class="container">
+      <h2>SERVICIOS MEDICOS</h2>
+      <p>
+        En la Clínica Eterna Primavera, nos enorgullecemos de ofrecer una atención integral para toda la familia en nuestras cuatro sedes estratégicamente ubicadas. Cada una de nuestras instalaciones está diseñada pensando en la comodidad y accesibilidad, con espacios amplios y un ambiente moderno que invita a la tranquilidad y al bienestar.
+      </p>
+      <p>
+        Contamos con la más alta tecnología para el diagnóstico y tratamiento, facilitando una atención precisa y eficiente en más de 6 especialidades médicas. Además, ofrecemos servicios de laboratorio y radiología de última generación, asegurando resultados confiables para una atención médica integral.
+      </p>
+      <p>
+        Nuestro compromiso es proporcionar una experiencia de salud excepcional, con profesionales altamente calificados y una atención cálida y humana que hace honor al nombre de nuestra clínica: una Eterna Primavera de salud y cuidado para usted y sus seres queridos.
+      </p>
+    </div>
+  </div>
+
+  
+
+  <section class="servicios">
+    <h3>Servicios que Ofrecemos</h3>
+    <ul>
+      <li>Medicina General</li>
+      <li>Pediatría</li>
+      <li>Cardiología</li>
+      <li>Ginecología</li>
+      <li>Ortopedia</li>
+      <li>Neurología</li>
+      <li>Y más...</li>
+      <br>
+    </ul>
+  </section>
+
+  <section class="ubicaciones">
+    <h4>Visitanos</h4>
+    <ul>
+      <li>Plaza Magdalena, COBÁN A.V.</li>
+      <li>Tikal Futura, CIUDAD DE GUATEMALA</li>
+      <li>Paseo las Américas, QUETZALTENANGO</li>
+      <li>Centro Comercial Metroplaza, CIUDAD DE GUATEMALA</li>
+      <br>
+
+    
+    </ul>
+
+
+
+  </section>
+
+  <footer>
+    <p>Clínica Médica La Eterna Primavera © 2023</p>
+  </footer>
+</body>
+</html>

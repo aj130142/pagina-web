@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acerca de Eterna Primavera</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: initial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+  }
+  header {
+    display: flex;
+    align-items: center; /* Alinea los elementos hijos verticalmente */
+    justify-content: space-between; /* Distribuye el espacio horizontalmente */
+    background-color: #3e6c41; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: #3498db 4px solid;
+    padding: 20px;
+    
+
+  }
+
+
+  header .highlight, header .actual a {
+    color: #4eb7fd;
+    font-weight: bold;
+  }
+  header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  header .highlight, header .enlaces a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  header a:hover{
+    color: #4eb7fd;
+  }
+
+  
+  #logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 20px; /* Margen a la izquierda del logotipo */
+    /* Asegúrate de que la clase logo tenga la misma altura o línea de altura que los elementos del menú */
+    line-height: 70px; /* Altura de la línea para centrar verticalmente el texto del logotipo */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    padding: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 70px; /* Altura de la línea para centrar verticalmente los enlaces */
+  }
+  
+  .titulo {
+    padding: 20px 0 40px 0;
+    margin: 20px 0;
+    background: #6ab04c;  /* verde */
+    border-bottom: #3498db 4px solid;
+    border-top: #3498db 4px solid;
+
+  }
+  .titulo h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+  }
+  .titulo p{
+
+    font-size: 22px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+  .servicios{
+    font-size: 20px;
+    margin-left: 20px;
+    border-bottom: #3498db 4px solid;
+
+  }
+
+  .servicios h3{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .ubicaciones{
+    font-size: 20px;
+    margin-left: 20px;
+    border-bottom: #3498db 4px solid;
+  }
+
+  .ubicaciones h4{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  footer {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #4CAF50;
+    text-align: center;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="imagenes/logo.png" height="30" width="30"  alt="Logotipo de La eterna primavera">
+        ETERNA PRIMAVERA 
+    </div>
+    <nav>
+        <ul>
+
+            <li><a href="{% url 'incicio' %}">INICIO</a></li>
+            <li><a href="{% url 'servi' %}">SERVICIOS</a></li>
+                <li class="actual"><a href="{% url 'nosotro' %}">NOSOTROS</a></li>
+                <li><a href="{% url 'contactar' %}">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <div class="titulo">
+
+    <section class="container">
+      <h2>ACERCA DE NOSOTROS</h2>
+      <p>
+        Fundada en el año 2012, la Clínica Eterna Primavera ha sido un baluarte de excelencia médica y cuidado compasivo. Nuestra misión siempre ha sido brindar atención de salud excepcional a través de un equipo de profesionales dedicados y tecnología de vanguardia. Nacida de la visión de transformar la experiencia de la atención médica, Eterna Primavera ofrece un entorno acogedor donde los pacientes y sus familias pueden encontrar un servicio integral y personalizado.
+      </p>
+      <p>
+        A lo largo de los años, hemos crecido en tamaño y especialidades, pero nuestro compromiso con los valores de empatía, innovación y profesionalismo permanece inalterable. Nos enorgullece ser un refugio de curación en nuestra comunidad y continuaremos esforzándonos por ser un lugar donde cada estación de la vida se celebre con cuidado y entusiasmo.
+      </p>
+    </section>
+  </div>
+
+  <section class="misionyvision">
+    <h3>Misión</h3>
+    <p>Nuestra misión es brindar una atención médica de la más alta calidad, centrada en el paciente y su familia. Nos comprometemos a ofrecer servicios de salud personalizados y compasivos, utilizando tecnologías avanzadas y prácticas innovadoras. Buscamos mejorar continuamente la salud y el bienestar de nuestras comunidades, manteniendo un ambiente de respeto, apoyo y educación continua para nuestros pacientes y personal.</p>
+    <h3>Visión</h3>
+    <p>Ser la institución líder en servicios de salud, reconocida por nuestra excelencia clínica y nuestro compromiso inquebrantable con el cuidado humano. Aspiramos a ser el referente de innovación médica y satisfacción del paciente, expandiendo nuestro alcance para transformar la experiencia de la atención médica en nuestra región. Imaginamos un futuro donde cada individuo tiene acceso a una atención de calidad, en un entorno que celebra la vida y fomenta una eterna primavera de salud para todos.</p>
+    <br>
+  </section>
+    <section class="valores">
+    <h3>Valores</h3>
+    <ul>
+      <li>Compromiso con la excelencia en el cuidado del paciente.</li>
+      <li>Integridad y ética profesional en todas nuestras acciones.</li>
+      <li>Colaboración y trabajo en equipo para la mejora continua.</li>
+      <li>Respeto y dignidad hacia nuestros pacientes, sus familias y nuestro personal.</li>
+      <br>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Clínica Médica La Eterna Primavera © 2023</p>
+  </footer>
+</body>
+</html>

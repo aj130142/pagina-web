@@ -1,0 +1,152 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* imagen de fondo al body */
+body {
+    background-image: url('imagenes/clinica.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+/* Estilos del header */
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 2em;
+    background-color: #364d51;
+    z-index: 10;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: initial;
+    font-size: 23px;
+}
+
+nav ul {
+    display: flex;
+    gap: 23px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Style the main content and banner section */
+main {
+    position: relative;
+    z-index: 2;
+}
+
+#logo {
+
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+#banner {
+    position: relative;
+}
+
+#banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+    background-position: center;
+}
+#scroll {
+    background-image: url("imagenes/flechaabajo.png");
+    background-color: transparent;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute; /* or fixed */
+    bottom: 350px; /* distance from the bottom */
+    right: 660px; /* distance from the right */
+    padding: 20px;
+    border-color: transparent;
+    width: 100px;
+    height: 10px;
+    cursor: pointer;
+
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #364d51; /* Semi-transparent black */
+    color: #ffffff;
+    padding: 2em;
+    font-family: helvetica,arial,sans-serif;
+
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding: 20px;
+    background-color: #364d51;
+    font-family: Arial, sans-serif;
+}
+
+#Historia h2{
+
+    /* Estas son solo sugerencias, puedes cambiar los valores como desees */
+    color: #ffffff; /* Cambia el color del texto */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 35px; /* Cambia el tamaño del texto */
+    font-weight: bold; /* Asegura que el texto está en negrita */
+    margin-bottom: 20px; /* Agrega espacio debajo del título */
+    padding: 10px 0; /* Agrega relleno arriba y abajo del título */
+    border-bottom: 2px solid #3498db; /* Añade una línea debajo del título */
+}
+
+
+#Historia {
+    width: 60%;
+    font-size: 25px;
+
+  }
+
+
+#footer .imagenes {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+#footer img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+
+#imagenes .description {
+    font-size: 18px;
+    text-align: center;
+  }
+
